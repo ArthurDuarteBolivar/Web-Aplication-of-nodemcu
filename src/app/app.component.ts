@@ -12,7 +12,11 @@ export class AppComponent implements OnInit{
 
   constructor(private service: NodemcuApiService){}
   results: Nodemcu[] = []
+  recentResults: Nodemcu[] = []
   ngOnInit(): void {
-    this.service.get().subscribe(res => this.results = res)
+    this.service.get().subscribe(res => this.recentResults = res)
+    setTimeout(() => {
+      this.results = this.recentResults
+    }, 1000);
   }
 }

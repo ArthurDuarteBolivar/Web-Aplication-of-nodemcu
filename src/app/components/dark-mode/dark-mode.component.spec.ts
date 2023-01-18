@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormLoginComponent } from './form-login.component';
+import { DarkModeComponent } from './dark-mode.component';
 
-describe('FormLoginComponent', () => {
-  let component: FormLoginComponent;
-  let fixture: ComponentFixture<FormLoginComponent>;
+describe('DarkModeComponent', () => {
+  let component: DarkModeComponent;
+  let fixture: ComponentFixture<DarkModeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormLoginComponent ]
+      declarations: [ DarkModeComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(FormLoginComponent);
+    fixture = TestBed.createComponent(DarkModeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
