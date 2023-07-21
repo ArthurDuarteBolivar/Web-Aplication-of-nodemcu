@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArrowBackComponent } from './arrow-back.component';
+import { ProgressSpinerComponent } from './progress-spiner.component';
 
-describe('ArrowBackComponent', () => {
-  let component: ArrowBackComponent;
-  let fixture: ComponentFixture<ArrowBackComponent>;
+describe('ProgressSpinerComponent', () => {
+  let component: ProgressSpinerComponent;
+  let fixture: ComponentFixture<ProgressSpinerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ArrowBackComponent ]
+      declarations: [ ProgressSpinerComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ArrowBackComponent);
+    fixture = TestBed.createComponent(ProgressSpinerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
